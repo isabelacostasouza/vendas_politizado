@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="tableColumnNome" prefHeight="196.0" prefWidth="507.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controledevendas.FXMLDocumentController3">
+   <children>
+      <Label layoutX="27.0" layoutY="58.0" prefHeight="35.0" prefWidth="342.0" text="Informe a quantidade desejada" textFill="WHITE" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinner" layoutX="376.0" layoutY="55.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="55.0" />
+      <Label fx:id="quantidadeDisponivel" alignment="CENTER" layoutX="375.0" layoutY="82.0" prefHeight="17.0" prefWidth="100.0" text="Disponível: 100" />
+      <Button layoutX="418.0" layoutY="110.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" AnchorPane.bottomAnchor="24.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="342.0" layoutY="110.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" AnchorPane.bottomAnchor="24.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="tableColumnNome" prefHeight="350.0" prefWidth="619.0" style="-fx-background-color: #484848; -fx-border-color: #cfcfcf; -fx-border-width: 6px;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controledelogin.FXMLDocumentController2">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="28.0" layoutY="28.0" onMouseClicked="#sair" prefHeight="27.0" prefWidth="53.0" text="Sair" textFill="#cfcfcf" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="24.0" layoutX="24.0" layoutY="30.0" onMouseClicked="#sair" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="26.0">
+         <image>
+            <Image url="@../imagens/voltar.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="nomeUser" layoutX="178.0" layoutY="100.0" text="Bem vindo(a) de volta, Isabela" textFill="#cfcfcf" AnchorPane.topAnchor="90.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="186.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#gerenciamentoProdutos" style="-fx-background-color: #cfcfcf;" text="Gerenciamento de produtos" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="250.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#lucros" style="-fx-background-color: #cfcfcf;" text="Meus lucros">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="514.0" layoutY="331.0" mnemonicParsing="false" onMouseClicked="#alterarLogin" style="-fx-background-color: null;" text="Alterar login" textFill="#cfcfcf" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="24.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#reiniciarLucros" style="-fx-background-color: null;" text="Reiniciar lucros" textFill="#cfcfcf">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
